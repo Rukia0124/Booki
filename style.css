@@ -308,6 +308,7 @@ main h3 {
   height: 65%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
 }
 
 #popular span {
@@ -343,6 +344,7 @@ main h3 {
   width: 40%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  object-fit: cover;
 }
 
 .activities-cards {
@@ -375,7 +377,6 @@ main h3 {
   height: 90%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-
   object-fit: cover;
 
 }
@@ -404,4 +405,64 @@ footer li:first-child {
 
 footer li {
   padding-bottom: 10px;
+}
+
+/********************** MEDIA QUERIES ********************/
+
+/* Tablette */
+
+@media screen and (max-width: 992px) {
+
+  .filters li {
+    padding: 10px;
+    font-size: 0.6em;
+  }
+}
+
+main {
+  margin-bottom: 0px;
+}
+
+#housing {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#popular {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.housing-card {
+  width: 180px;
+}
+
+.popular-cards {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popular-card {
+  width: 205px;
+  font-size: 0.1em;
+}
+
+.activity-card {
+  width: 140px;
+  height: 250px;
+}
+
+
+.activity-card img {
+  height: 80%;
+}
+
+#popular span {
+  margin: 20px;
+}
+
+footer {
+  font-size: 0.7em;
+  margin-top: 10px;
 }
