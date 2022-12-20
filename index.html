@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -37,7 +40,8 @@
       <form>
         <label for="location" id="label"><i class="fa-solid fa-location-dot"></i></label>
         <input type="text" id="location" placeholder="Marseille, France" />
-        <input type="submit" value="Rechercher" />
+        <input class="search" type="submit" value="Rechercher" />
+        <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
     <div class="filters-container">
@@ -137,7 +141,7 @@
           </article>
         </a>
       </div>
-      <h3>Afficher plus</h3>
+      <h3 class="more">Afficher plus</h3>
     </section>
     <section id="popular">
       <h2>Les plus populaires</h2>
@@ -174,7 +178,7 @@
         </a>
         <a href="#">
           <article class="popular-card">
-            <img src="./assets/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+            <img src="./assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Photo d'une chambre de l'hôtel Bleu et Blanc">
             <div class="popular-infos">
               <h3>Hôtel Bleu et Blanc</h3>
