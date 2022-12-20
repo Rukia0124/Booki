@@ -352,7 +352,6 @@ main h3 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .activity-card {
@@ -409,7 +408,35 @@ footer li {
 
 /********************** MEDIA QUERIES ********************/
 
-/* Tablette */
+
+/* PC */
+
+
+@media screen and (max-width: 1325px) {
+  .housing-card {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .housing-card {
+    font-size: 0.1em;
+    width: 170px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .housing-card {
+    font-size: 0.1em;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/* PAD */
+
 
 @media screen and (max-width: 992px) {
 
@@ -417,52 +444,86 @@ footer li {
     padding: 10px;
     font-size: 0.6em;
   }
-}
-
-main {
-  margin-bottom: 0px;
-}
-
-#housing {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-#popular {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-}
-
-.housing-card {
-  width: 180px;
-}
-
-.popular-cards {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.popular-card {
-  width: 205px;
-  font-size: 0.1em;
-}
-
-.activity-card {
-  width: 140px;
-  height: 250px;
-}
 
 
-.activity-card img {
-  height: 80%;
+  main {
+    margin-bottom: 0px;
+  }
+
+  #housing {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #popular {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .housing-card {
+    width: 200px;
+    justify-content: center;
+  }
+
+  .popular-cards {
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+  }
+
+  .popular-card {
+    width: 250px;
+    height: 120px;
+    font-size: 0.1em;
+  }
+
+  .activity-card {
+    width: 180px;
+    height: 280px;
+    margin: 10px 20px 20px 15px;
+  }
+
+
+  .activity-card img {
+    height: 80%;
+  }
+
+  #popular span {
+    margin: 20px;
+  }
+
+  footer {
+    font-size: 0.7em;
+    margin-top: 10px;
+  }
 }
 
-#popular span {
-  margin: 20px;
+@media screen and (max-width: 958px) {
+  .popular-cards {
+    flex-direction: row;
+    column-gap: 8px;
+    justify-content: center;
+  }
+
+  .popular-card {
+    width: 205px;
+    height: 90px;
+
+  }
+
+  .activity-card {
+    width: 140px;
+    height: 220px;
+    margin: 10px 10px 20px 10px;
+  }
 }
 
-footer {
-  font-size: 0.7em;
-  margin-top: 10px;
+@media screen and (max-width: 817px) {
+  .housing-card {
+    width: 170px;
+  }
 }
+
+
+/* MOBILE */
