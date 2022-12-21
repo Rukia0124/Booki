@@ -13,23 +13,8 @@ body {
   margin: auto;
 }
 
-
-img {
-  width: 100px;
-}
-
 h1 {
-  font-size: 16px;
-}
-
-h2 {
-  font-size: 10px;
-  font-weight: 800;
-
-}
-
-h3 {
-  font-size: 12px
+  font-size: 22px;
 }
 
 i {
@@ -50,6 +35,7 @@ header {
 
 .logo img {
   width: 60px;
+  padding-left: 20px;
 }
 
 .navigation {
@@ -62,7 +48,6 @@ header {
 
 .navigation a {
   position: relative;
-  font-size: 12px;
   padding: 30px;
 }
 
@@ -84,7 +69,7 @@ nav {
 }
 
 nav p {
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 10px;
 }
 
@@ -104,20 +89,18 @@ input[type=text] {
 
 input[type="submit"],
 .btn {
+  display: inline-block;
   background-color: #0065fc;
   color: white;
-  font-size: 10px;
+  font-size: 16px;
   border: solid 1px #f2f2f2;
   border-left: none;
   border-radius: 0 15px 15px 0;
   height: 35px;
-  padding: 12px;
+  padding: 15px;
   cursor: pointer;
   margin-left: -5px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+
 }
 
 .btn {
@@ -152,9 +135,9 @@ input[type="submit"],
 }
 
 .filters li {
-  font-size: 12px;
-  font-weight: 900;
-  padding: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
   margin: 15px;
 }
 
@@ -174,13 +157,13 @@ input[type="submit"],
 }
 
 .infos {
-  font-size: 12px;
+  font-size: 16px;
   margin: 30px 20px 0 20px;
 }
 
 .info .fa-solid {
   color: #0065fc;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .info {
@@ -204,16 +187,15 @@ main {
 }
 
 main h2 {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 main h3 {
   margin-top: 30px;
-  font-size: 12px;
-  font-weight: 800;
-
+  font-size: 14px;
+  font-weight: 700;
 }
 
 #housing,
@@ -222,7 +204,6 @@ main h3 {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   padding: 40px;
 
 
@@ -243,7 +224,6 @@ main h3 {
 
 #popular {
   width: 33%;
-
   position: relative;
 }
 
@@ -262,11 +242,6 @@ main h3 {
 .housing-card {
   background: #ffffff;
   border-radius: 15px;
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
   width: 230px;
   height: 170px;
   border: solid 3px white;
@@ -275,21 +250,19 @@ main h3 {
 
 .housing-card h3,
 .popular-card h3 {
-  margin: 5px;
-  font-size: 10px;
-  font-weight: 900;
+  margin: 0 5px 0 5px;
 }
 
 .housing-card p,
 .popular-card p {
-  margin: 5px;
-  font-size: 10px;
+  margin-left: 5px;
+  font-size: 14px;
   margin-bottom: -2px;
 }
 
 .housing-card i,
 .popular-card i {
-  font-size: 8px;
+  font-size: 7px;
   margin: 0;
 }
 
@@ -310,7 +283,7 @@ main h3 {
 
 .housing-card img {
   width: 100%;
-  height: 65%;
+  height: 60%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
@@ -366,18 +339,26 @@ main h3 {
 .activity-card {
   background: #ffffff;
   border-radius: 15px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
   width: 16vw;
-  height: 300px;
+  height: 330px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin: 10px;
+  font-size: 14px;
 }
 
-.activity-card h3 {
-  margin: 10px;
+#activities h2 {
+  margin-left: 30px;
+}
+
+.act-infos h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.act-infos {
+  height: 15%;
+
 }
 
 .activity-card img {
@@ -394,7 +375,7 @@ main h3 {
 
 footer {
   background: #f2f2f2;
-
+  font-size: 14px;
   display: flex;
   justify-content: space-around;
   padding: 40px;
@@ -423,16 +404,25 @@ footer li {
 
 @media screen and (max-width: 1325px) {
   .housing-card {
-    width: 180px;
+    width: 190px;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  .housing-card h3 {
+    font-size: 13px;
+  }
+
+  .housing-card p {
+    font-size: 12px;
+  }
+
   .housing-card {
     font-size: 10px;
     width: 170px;
     height: 160px;
   }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -447,16 +437,20 @@ footer li {
 /* PAD */
 
 
-@media screen and (max-width: 992px) {
-
-  .filters li {
-    padding: 10px;
-    font-size: 10px;
-  }
-
+@media screen and (max-width: 991px) {
 
   main {
     margin-bottom: 0px;
+  }
+
+  .filters li {
+    padding: 14px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .navigation a:hover {
+    border-top: none
   }
 
   #housing {
@@ -471,7 +465,7 @@ footer li {
   }
 
   .housing-card {
-    width: 200px;
+    width: 230px;
     justify-content: center;
   }
 
@@ -508,16 +502,21 @@ footer li {
   }
 }
 
+
 @media screen and (max-width: 958px) {
   .popular-cards {
     flex-direction: row;
-    column-gap: 8px;
+    justify-content: center;
+  }
+
+  .housing-card {
+    width: 200px;
     justify-content: center;
   }
 
   .popular-card {
-    width: 205px;
-    height: 90px;
+    width: 195px;
+    height: 100px;
 
   }
 
@@ -532,6 +531,8 @@ footer li {
   .housing-card {
     width: 170px;
   }
+
+
 }
 
 
@@ -540,7 +541,7 @@ footer li {
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   h2 {
@@ -558,6 +559,7 @@ footer li {
   }
 
   .navigation a {
+    font-size: 16px;
     margin: 0 50px;
   }
 
@@ -600,7 +602,8 @@ footer li {
   }
 
   .infos {
-    font-size: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .filters {
@@ -611,6 +614,9 @@ footer li {
 
   .filters li:first-child {
     width: 100%;
+    padding-left: 30px;
+    padding-bottom: 0;
+    font-size: 16px;
   }
 
   .filters li {
@@ -640,8 +646,14 @@ footer li {
   #popular h2,
   #activities h2,
   #housing h2 {
-    margin: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
+    margin: 10px;
+  }
+
+  #popular h3,
+  #activities h3,
+  #housing h3 {
+    font-size: 16px;
   }
 
   .popular-cards {
@@ -653,10 +665,11 @@ footer li {
     height: 150px;
   }
 
-  #housing {
+  #housing,
+  #activities {
     width: 100vw;
     background: #ffffff;
-    padding-top: 10px;
+    padding: 10px;
     margin-bottom: 0;
   }
 
@@ -670,7 +683,7 @@ footer li {
   }
 
   #activities {
-    margin: 0;
+    margin-top: 40px;
   }
 
   .activities-cards {
