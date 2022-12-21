@@ -33,6 +33,10 @@ header {
   font-size: 16px;
 }
 
+.logo {
+  width: 65%;
+}
+
 .logo img {
   width: 70px;
   padding-left: 20px;
@@ -40,7 +44,7 @@ header {
 
 .navigation {
   display: flex;
-  width: 25%;
+  width: 35%;
   justify-content: space-around;
   cursor: pointer;
 }
@@ -49,6 +53,7 @@ header {
 .navigation a {
   position: relative;
   padding: 30px;
+  margin: 10px;
 }
 
 .navigation a:hover {
@@ -339,7 +344,7 @@ main h3 {
 .activity-card {
   background: #ffffff;
   border-radius: 15px;
-  width: 16vw;
+  width: 230px;
   height: 330px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin: 10px;
@@ -430,6 +435,10 @@ footer li {
     font-size: 10px;
     width: 150px;
     height: 150px;
+  }
+
+  .activity-card {
+    width: 200px;
   }
 }
 
