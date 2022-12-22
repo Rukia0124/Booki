@@ -10,7 +10,7 @@
 
 body {
   max-width: 1400px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 h1 {
@@ -29,7 +29,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
   font-size: 16px;
 }
 
@@ -52,8 +52,8 @@ header {
 
 .navigation a {
   position: relative;
-  padding: 30px;
-  margin: 10px;
+  border: 2px solid #ffffff;
+  padding: 20px 0 20px 0;
 }
 
 .navigation a:hover {
@@ -80,6 +80,7 @@ nav p {
 
 form {
   margin: 20px;
+  margin-left: 0;
   display: flex;
   align-items: center;
   text-align: center;
@@ -99,7 +100,8 @@ input[type="submit"],
   align-items: center;
   background-color: #0065fc;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 700;
   border: solid 1px #f2f2f2;
   border-left: none;
   border-radius: 0 15px 15px 0;
@@ -107,7 +109,6 @@ input[type="submit"],
   padding: 0px 15px;
   cursor: pointer;
   margin-left: -5px;
-
 }
 
 .btn {
@@ -119,7 +120,7 @@ input[type="submit"],
   height: 35px;
   border: solid 1px #f2f2f2;
   border-radius: 15px 0 0 15px;
-  padding: 12px 15px;
+  padding: 15px 20px;
   margin: -5px;
   display: flex;
   justify-content: center;
@@ -128,15 +129,15 @@ input[type="submit"],
 
 #label i {
   color: black;
-  width: 16px;
-
-
+  font-size: 16px;
 }
 
 .filters {
   display: flex;
   flex-direction: row;
+  justify-content: start;
   max-width: 890px;
+  margin-left: 0;
 }
 
 .filters li {
@@ -146,10 +147,17 @@ input[type="submit"],
   margin: 15px;
 }
 
+.filters li:first-child {
+  margin: 15px 0;
+  padding: 10px 0;
+
+}
+
 .filter {
   border: solid 2px #f2f2f2;
   border-radius: 25px;
   cursor: pointer;
+  margin-left: 0;
 }
 
 .filter:active,
@@ -161,9 +169,10 @@ input[type="submit"],
   padding: 0 5px 0 0;
 }
 
+
 .infos {
   font-size: 16px;
-  margin: 30px 20px 0 20px;
+  margin: 30px 20px 0 0;
 }
 
 .info .fa-solid {
@@ -177,7 +186,7 @@ input[type="submit"],
   border: solid 1.3px #f2f2f2;
   padding: 0 8px;
   border-radius: 50%;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 
@@ -209,7 +218,7 @@ main h3 {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
 
 
 }
@@ -302,6 +311,11 @@ main h3 {
 }
 
 .popular-cards {
+  width: 100%;
+}
+
+.popular-card a {
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -315,7 +329,7 @@ main h3 {
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
+  width: 100%;
   height: 100px;
   border: solid 3px white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -337,15 +351,14 @@ main h3 {
 .activities-cards {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .activity-card {
   background: #ffffff;
   border-radius: 15px;
-  width: 230px;
-  height: 330px;
+  width: 25%;
+  height: 450px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin: 10px;
   font-size: 14px;
@@ -362,13 +375,14 @@ main h3 {
 }
 
 .act-infos {
-  height: 15%;
-
+  width: 100%;
+  height: 10%;
+  padding: 5px;
 }
 
 .activity-card img {
   width: 100%;
-  height: 85%;
+  height: 90%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
@@ -428,6 +442,10 @@ footer li {
     height: 160px;
   }
 
+  .activity-card {
+    height: 330px;
+  }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -437,8 +455,8 @@ footer li {
     height: 150px;
   }
 
-  .activity-card {
-    width: 200px;
+  .activity-card h3 {
+    font-size: 12px;
   }
 }
 
@@ -459,7 +477,7 @@ footer li {
   }
 
   .navigation a:hover {
-    border-top: none
+    border-top: 2px solid white
   }
 
   #housing {
@@ -482,23 +500,26 @@ footer li {
     flex-direction: row;
     column-gap: 20px;
     justify-content: center;
+    display: flex;
+  }
+
+  .popular-card a {
+    width: 100%;
   }
 
   .popular-card {
-    width: 250px;
+    width: 33%;
     height: 120px;
     font-size: 10px;
   }
 
   .activity-card {
-    width: 180px;
     height: 280px;
-    margin: 10px 20px 20px 15px;
   }
 
 
   .activity-card img {
-    height: 80%;
+    height: 85%;
   }
 
   #popular span {
@@ -523,15 +544,9 @@ footer li {
     justify-content: center;
   }
 
-  .popular-card {
-    width: 195px;
-    height: 100px;
-
-  }
-
   .activity-card {
-    width: 140px;
-    height: 220px;
+
+    height: 300px;
     margin: 10px 10px 20px 10px;
   }
 }
@@ -560,11 +575,25 @@ footer li {
   header {
     flex-direction: column;
     padding: 20px;
+    width: 100%;
+    align-items: center;
   }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
 
   .navigation {
     justify-content: center;
     font-size: 12px;
+    width: 100%;
+    text-align: center;
   }
 
   .navigation a {
@@ -579,7 +608,7 @@ footer li {
     background: #0065FC;
     display: inline-block;
     margin-bottom: 15px;
-    transform: translate(-50%);
+    transform: translate(-50%)
   }
 
   nav {
@@ -589,7 +618,14 @@ footer li {
   .form {
     width: 100vw;
     display: flex;
-    justify-content: center;
+    margin: 15px;
+  }
+
+  input[type=text] {
+    width: 70%;
+    height: 50px;
+    border: solid 1px #f2f2f2;
+    padding: 12px;
   }
 
   input[type="submit"] {
@@ -599,45 +635,61 @@ footer li {
   .btn {
     display: block;
     width: 49px;
+    border-radius: 0 20px 20px 0;
   }
 
   .btn i {
     color: #ffffff;
     font-size: 10px;
+    font-size: 18px;
   }
 
   .search {
     display: none;
   }
 
+  input[type="submit"],
+  .btn {
+    height: 50px;
+    width: 10%;
+  }
+
+  #label {
+    width: 10%;
+    height: 50px;
+    border-radius: 30px 0 0 30px;
+  }
+
+  #label i {
+    font-size: 18px;
+  }
+
   .infos {
     font-size: 14px;
     margin-bottom: 20px;
+    padding: 20px;
   }
 
   .filters {
     flex-wrap: wrap;
-    width: 100vw;
-    justify-content: center;
+    width: 100%;
   }
 
   .filters li:first-child {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-bottom: 0;
     font-size: 16px;
   }
 
   .filters li {
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 8px;
+    font-size: 12px;
   }
 
   .filter {
-    border: solid 2px #f2f2f2;
-    border-radius: 25px;
-    cursor: pointer;
-    width: 40vw;
+    width: 45%;
   }
 
   main {
@@ -655,8 +707,13 @@ footer li {
   #popular h2,
   #activities h2,
   #housing h2 {
-    padding-left: 10px;
+    padding-left: 20px;
     margin: 10px;
+    font-size: 22px;
+  }
+
+  #housing h2 {
+    padding: 10px;
   }
 
   #popular h3,
@@ -672,6 +729,7 @@ footer li {
   .popular-card {
     width: 90vw;
     height: 150px;
+    margin: 25px;
   }
 
   #housing,
@@ -703,6 +761,14 @@ footer li {
     width: 90vw;
   }
 
+  .rated {
+    padding: 10px 0;
+  }
+
+  .rated i {
+    font-size: 12px;
+  }
+
   footer {
     flex-direction: column;
     width: 100vw;
@@ -713,4 +779,12 @@ footer li {
     margin-top: 15px;
     padding-bottom: 10px;
   }
+
+  form {
+    width: 100%;
+  }
+
+
+
+
 }
