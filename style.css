@@ -50,7 +50,7 @@ header {
 
 .navigation {
   display: flex;
-  width: 35%;
+  width: 300px;
   justify-content: space-around;
   cursor: pointer;
 }
@@ -609,6 +609,10 @@ footer li {
   .navigation a {
     font-size: 16px;
     margin: 0 50px;
+  }
+
+  .navigation a:first-child {
+    color: #0065FC;
   }
 
   header::after {
