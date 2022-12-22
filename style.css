@@ -233,7 +233,7 @@ main h3 {
 
 #housing {
   width: 66%;
-
+ position: relative;
 }
 
 #popular {
