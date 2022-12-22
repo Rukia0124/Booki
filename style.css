@@ -60,6 +60,8 @@ header {
   position: relative;
   border: 2px solid #ffffff;
   padding: 20px 0 20px 0;
+  width: 50%;
+  text-align: center;
 }
 
 .navigation a:hover {
