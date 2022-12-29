@@ -319,10 +319,6 @@ main h3 {
   margin: 40px;
 }
 
-.popular-cards {
-  width: 100%;
-}
-
 .popular-card a {
   height: 100%;
   display: flex;
@@ -721,7 +717,6 @@ footer li:first-child {
 
   #popular {
     order: -1;
-    width: 100vw;
     padding: 10px 0;
     border-radius: 0;
   }
@@ -746,25 +741,28 @@ footer li:first-child {
 
   .popular-cards {
     flex-direction: column;
+    padding: 25px;
   }
 
   .popular-card {
-    width: 90vw;
+    width: 100%;
     height: 150px;
-    margin: 25px;
   }
 
   #housing,
   #activities {
-    width: 100vw;
     background: #ffffff;
-    padding: 10px;
     margin-bottom: 0;
+    padding: 0;
+  }
+
+  .housing-cards a {
+    width: 100%;
+    padding: 0 25px;
   }
 
   .housing-card {
-    width: 90vw;
-    height: 200px;
+    width: 100%;
   }
 
   .more {
@@ -777,10 +775,11 @@ footer li:first-child {
 
   .activities-cards {
     flex-direction: column;
+    padding: 25px;
   }
 
   .activity-card {
-    width: 90vw;
+    width: 100%;
   }
 
   .rated {
@@ -788,7 +787,7 @@ footer li:first-child {
   }
 
   .rated i {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   footer {
